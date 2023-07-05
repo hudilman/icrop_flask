@@ -1,9 +1,9 @@
 # Laporan Tugas Uas Komputer Grafik - Mohamad Ilman Huda
 
 ## Biodata
-Nama : Mohamad Ilman huda
-Kelas : 06TPLE007
-Mata Kuliah : Komputer Grafik
+Nama : Mohamad Ilman huda \
+Kelas : 06TPLE007 \
+Mata Kuliah : Komputer Grafik 
 
 ## Project Overview
 
@@ -47,22 +47,22 @@ upload file bersifat required yang artinya jika kalian klik simpan tidak akan ad
 
 Setelah berhasil mengupload gambar , maka akan tampil halaman seperti berikut :
 
-![success upload] (<https://github.com/hudilman/icrop_flask/blob/main/img_md/success%20upload%20gambar.JPG>)
+![success upload](<https://github.com/hudilman/icrop_flask/blob/main/img_md/success%20upload%20gambar.JPG>)
 
 tampilan succcess tersebut saya menggunakan sweeatalert dari js hanya untuk menampilkan pesan berhasil atau gagal.
 
 kemudian pada tahap ini masukan ukuran dan posisi yang kita inginkan untuk memotong gambar yang sudah kita upload sebelumnya.
 perlu diingat bahwa kedua input tersebut bersifat required yang artinya tidak boleh kosong dan jika kosong tidak akan bisa melakukan submit.
 
-![Halaman potong gambar] (<https://github.com/hudilman/icrop_flask/blob/main/img_md/atur%20gambar%20untuk%20di%20potong.JPG>)
+![Halaman potong gambar](<https://github.com/hudilman/icrop_flask/blob/main/img_md/atur%20gambar%20untuk%20di%20potong.JPG>)
 
 berikut dibawah ini adalah halaman terakhir ketika kita berhasil memotong gambar.
 
-![Output] (<https://github.com/hudilman/icrop_flask/blob/main/img_md/output%20potong%20gambar.JPG>)
+![Output](<https://github.com/hudilman/icrop_flask/blob/main/img_md/output%20potong%20gambar.JPG>)
 
 pastikan bahwa ukuran yang kita masukan tidak melebihi dari ukuran gambar asli agar tidak terjadi error seperti berikut.
 
-![input ukuran terlalu besar] (<https://github.com/hudilman/icrop_flask/blob/main/img_md/ukuran%20yang%20di%20input%20terlalu%20besar.JPG>)
+![input ukuran terlalu besar](<https://github.com/hudilman/icrop_flask/blob/main/img_md/ukuran%20yang%20di%20input%20terlalu%20besar.JPG>)
 
 
 # Kesimpulan
