@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/custom.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/sweetalert2.min.css') }}">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    
+    <title>UAS - MOHAMAD ILMAN HUDA - 06TPLE007</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary justify-content-center fixed-top">
+        <a class="navbar-brand abs" href="https://mohamadilmanhuda.my.id">&#169; Mohamad Ilman Huda</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="collapsingNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">TUGAS UAS KOMPUTER GRAFIK</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a href="https://github.com/hudilman" class="nav-link"><i class="fa fa-github"></i></a>
+                </li>
+                <li class="nav-item active">
+                    <a href="https://mohamadilmanhuda.my.id/" class="nav-link"><i class="fa fa-chrome"></i></a>
+                </li>
+                <li class="nav-item active">
+                    <a href="https://www.linkedin.com/in/mohamadilmanhuda/" class="nav-link"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li class="nav-item active">
+                    <a href="https://www.instagram.com/ilman_hudaa/" class="nav-link"><i class="fa fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="header py-5">
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+        {% if filename %}
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3><i class=""></i> Crop Image</h3>
+                    </div>
+                    <div class="card-body">
+                        <form action="{{ url_for('crop_img') }}" method="post" enctype="multipart/form-data">
+                            <!-- {% set list1 = url_for('display_image', filename=filename).split('/') %} -->
+                            <input type="hidden" name="img_hide" value="{{ filename }}" required>
+                            <div class="form-group">
+                                <label>Size <small class="text-danger">*</small></label>
+                                <input type="number" value="100" name="size" placeholder="Input Size" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Position <small class="text-danger">*</small></label>
+                                <select name="position" id="position" class="form-control" required>
+                                    <option value="top_left">Top left</option>
+                                    <option value="top_center">Top center</option>
+                                    <option value="top_right">Top right</option>
+                                    <option value="center_left">Center left</option>
+                                    <option value="center">Center</option>
+                                    <option value="center_right">Center right</option>
+                                    <option value="bottom_left">Bottom left</option>
+                                    <option value="bottom_center">Bottom center</option>
+                                    <option value="bottom_right">Bottom right</option>
+                                </select>
+                            </div>
+                            <div class="">
+                                <label for="">* ) Required</label>
+                            </div>
+                            <button class="btn btn-primary"><i class="fa fa-save"></i> Simpan</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 py-5">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Image</h3>
+                    </div>
+                    <div class="card-body" >
+                        <img src="{{ url_for('display_image', filename=filename) }}" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Upload File</h3>
+                    </div>
+                    <div class="card-body">
+                        <form action="{{ url_for('upload_file') }}" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label>Masukan File Image (png,jpg,jpeg) <small class="text-danger">*</small></label>
+                                <input type="file" name="file_img" class="form-control" accept="image/png, image/jpg, image/jpeg" required>
+                            </div>
+                            <div class="">
+                                <label for="">* ) Required</label>
+                            </div>
+                            <button class="btn btn-primary"><i class="fa fa-save"></i> Simpan</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        {% else %}
+
+        <div class="col-12 col-sm-6 col-lg-3">
+            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+              <!-- Team Thumb-->
+              <div class="advisor_thumb"><img src="{{url_for('static',filename='assets/img/58804916.jpeg')}}" alt="">
+                <!-- Social Info-->
+                <div class="social-info"><a href="https://github.com/hudilman"><i class="fa fa-github"></i></a><a href="https://mohamadilmanhuda.my.id/"><i class="fa fa-chrome"></i></a><a href="https://www.linkedin.com/in/mohamadilmanhuda/"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/ilman_hudaa/"><i class="fa fa-instagram"></i></a></div>
+              </div>
+              <!-- Team Details-->
+              <div class="single_advisor_details_info">
+                <h6>Mohamad Ilman Huda</h6>
+                <p class="designation">Kelas : 06TPLE007</p>
+                <p class="designation">NIM : 201011402171</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-8 py-5">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Upload File</h3>
+                </div>
+                <div class="card-body">
+                    <form action="{{ url_for('upload_file') }}" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label>Masukan File Image (png,jpg,jpeg) <small class="text-danger">*</small></label>
+                            <input type="file" name="file_img" class="form-control" accept="image/png, image/jpg, image/jpeg" required>
+                        </div>
+                        <div class="">
+                            <label for="">* ) Required</label>
+                        </div>
+                        <button class="btn btn-primary"><i class="fa fa-save"></i> Simpan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        {% endif %}
+
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='assets/js/jquery-3.3.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/sweetalert2.all.min.js') }}"></script>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+                
+            {% for category,message in messages %}
+                  <script>
+                    Swal.fire({
+                        icon: '{{ category }}',
+                        title: '{{ message }}.',
+                        text: '{{ message }}',
+                    });
+                  </script>
+            {% endfor %}
+                
+        {% endif %}
+    {% endwith %}
+</body>
+</html>

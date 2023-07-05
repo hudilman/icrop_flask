@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/sweetalert2.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/custom.css') }}">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <title>UAS - MOHAMAD ILMAN HUDA - 06TPLE007</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary justify-content-center fixed-top">
+        <a class="navbar-brand abs" href="https://mohamadilmanhuda.my.id">&#169; Mohamad Ilman Huda</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="collapsingNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">TUGAS UAS KOMPUTER GRAFIK</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a href="https://github.com/hudilman" class="nav-link"><i class="fa fa-github"></i></a>
+                </li>
+                <li class="nav-item active">
+                    <a href="https://mohamadilmanhuda.my.id/" class="nav-link"><i class="fa fa-chrome"></i></a>
+                </li>
+                <li class="nav-item active">
+                    <a href="https://www.linkedin.com/in/mohamadilmanhuda/" class="nav-link"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li class="nav-item active">
+                    <a href="https://www.instagram.com/ilman_hudaa/" class="nav-link"><i class="fa fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="header py-5">
+        
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+
+            
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Image</h3>
+                    </div>
+                    <div class="card-body" >
+                        <img src="{{url_for('static',filename='uploads/'+img_hide) }}"  class="img-responsive">
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="{{url_for('index')}}" class="btn btn-primary">Go To HOME</a> 
+                        <a href="{{url_for('static',filename='uploads/'+img_hide) }}" download="" class="btn btn-success">Download Image</a>            
+                    </div>
+                </div>
+            </div>
+
+           
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='assets/js/jquery-3.3.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/sweetalert2.all.min.js') }}"></script>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+                
+            {% for category,message in messages %}
+                  <script>
+                    Swal.fire({
+                        icon: '{{ category }}',
+                        title: '{{ message }}.',
+                        text: '{{ message }}',
+                    });
+                  </script>
+            {% endfor %}
+                
+        {% endif %}
+    {% endwith %}
+</body>
+</html>
