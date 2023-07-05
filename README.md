@@ -41,8 +41,9 @@ Variabel-variabel pada movie-recommendation-data adalah sebagai berikut :
 
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)&nbsp;&nbsp;
 [![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com/en/2.2.x/)&nbsp;&nbsp;
-[![Railway](https://img.shields.io/badge/Railway-131415?style=for-the-badge&logo=railway&logoColor=white)](https://railway.app/)&nbsp;&nbsp;
-[![Bootstrap](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)](https://www.tensorflow.org/)
+Bootstrap
+Jquery
+SweeatAlert
 
 </div>
 
