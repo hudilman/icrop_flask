@@ -49,7 +49,7 @@ SweeatAlert
 
 # Result
 
-Pertama-tama jalankan file python flask nya terlebih dahulu atau bisa akses ke halaman web yang sudah saya deploy ke sini : http://siapaajah256.pythonanywhere.com/
+Pertama-tama jalankan file python flask nya terlebih dahulu atau bisa akses ke halaman web yang sudah saya deploy ke sini : https://siapaajah256.pythonanywhere.com/
 
 ![Halaman Utama](<https://github.com/hudilman/icrop_flask/blob/main/img_md/home.JPG>)
 
@@ -79,4 +79,4 @@ pastikan bahwa ukuran yang kita masukan tidak melebihi dari ukuran gambar asli a
 # Kesimpulan
 
 Berdasarkan hasil diatas saya berhasil memenuhi harapan untuk membuat aplikasi memotong gambar dengan ukuran dan posisi yang harus diinput sesuai keinginan dari user, dan saya juga sudah membuat validasi pada setiap input yang dimasukan.
-aplikasi yang saya buat 100% sudah memenuhi kebutuhan dari tugas uas komputer grafik, adapun aplikasi yang sudah saya deploy bisa di akses di url : http://siapaajah256.pythonanywhere.com/
+aplikasi yang saya buat 100% sudah memenuhi kebutuhan dari tugas uas komputer grafik, adapun aplikasi yang sudah saya deploy bisa di akses di url : https://siapaajah256.pythonanywhere.com/
