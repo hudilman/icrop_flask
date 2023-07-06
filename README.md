@@ -22,7 +22,7 @@ membuat website aplikasi untuk memotong sebuah gambar dengan posisi yang kita in
 
 ## Data Understanding
 
-Variabel-variabel pada movie-recommendation-data adalah sebagai berikut :
+Variabel-variabel pada icrop_flask adalah sebagai berikut :
 
 - top left : mengambil gambar bagian atas kiri
 - top right : mengambil gambar bagian atas kanan
