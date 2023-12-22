@@ -4,7 +4,7 @@
 Nama : Mohamad Ilman huda \
 Kelas : 06TPLE007 \
 Mata Kuliah : Komputer Grafik 
-
+ 
 ## Project Overview
 
 Proyek ini merupakan tugas UAS Komputer Grafik yang bertujuan untuk membuat aplikasi web menggunakan Python Flask yang memungkinkan pengguna untuk memotong (crop) gambar dengan posisi dan ukuran sesuai dengan pilihan mereka. Aplikasi ini akan memberikan pengguna antarmuka yang intuitif untuk memilih area yang ingin mereka potong dari gambar dan menyimpannya sebagai gambar terpisah.
